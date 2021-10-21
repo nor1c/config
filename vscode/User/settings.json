@@ -1,0 +1,180 @@
+{
+    // editor
+    "editor.fontSize": 14,
+    "editor.fontFamily": "Liberation Mono",
+    // "editor.fontFamily": "DM Mono",
+    // "editor.fontFamily": "DM Sans",
+    // "editor.fontFamily": "Jetbrains Mono",
+    // "editor.fontFamily": "Dank Mono",
+    // "editor.fontFamily": "Roboto Mono",
+    // "editor.fontFamily": "Cascadia Mono SemiLight",
+    // "editor.fontFamily": "Cascadia Code SemiLight",
+    // "editor.fontFamily": "Inconsolata",
+    // "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'zero', 'onum'",
+    "editor.fontWeight": "400",
+    "editor.minimap.enabled": false,
+    "workbench.editor.decorations.colors": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.formatOnPaste": false,
+    "editor.lineHeight": 28,
+    "editor.smoothScrolling": true,
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.suggestSelection": "first",
+    "editor.tokenColorCustomizations": {
+        "comments": "#7b7b7b"
+    },
+    // "editor.cursorWidth": 10,
+    "editor.cursorStyle": "block",
+    // "editor.codeActionsOnSave": {
+    //     "source.fixAll": true
+    // },
+    "editor.bracketPairColorization.enabled": true,
+    "editor.autoClosingBrackets": "always",
+    "editor.autoClosingQuotes": "always",
+    "editor.autoClosingDelete": "always",
+    "editor.tabSize": 2,
+
+    // explorer
+    "explorer.compactFolders": false,
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+
+    // terminal
+    "terminal.integrated.fontFamily": "Liberation Mono for Powerline",
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.gpuAcceleration": "off",
+    "terminal.integrated.tabs.location": "left",
+    "terminal.integrated.defaultProfile.windows": "Ubuntu-20.04 (WSL)",
+
+    // workbench
+    "workbench.colorTheme": "Seth",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.tree.renderIndentGuides": "always",
+    "workbench.colorCustomizations": {
+        // dark theme
+        "editor.background": "#1f1f1f",
+        "terminal.background": "#1f1f1f",
+        "statusBar.background": "#1f1f1f",
+        "sideBar.background": "#1f1f1f",
+        "tab.activeBackground": "#1f1f1f",
+        "activityBar.background": "#1f1f1f",
+        "activityBar.activeBackground": "#151515",
+        "activityBar.border": "#1f1f1f",
+        "activityBarBadge.background": "#b34196",
+        "activityBar.dropBorder": "#1f1f1f",
+        "tab.hoverBackground": "#222222",
+        "titleBar.activeBackground": "#1f1f1f",
+        "editorIndentGuide.background": "#303030",
+        "editorIndentGuide.activeBackground": "#969696",
+        "tree.indentGuidesStroke": "#222222",
+        "tab.border": "#262626",
+        "list.inactiveSelectionBackground": "#272727",
+        "editor.lineHighlightBackground": "#292929",
+        "tab.inactiveBackground": "#262626",
+
+        // light theme
+        // "statusBar.background": "#444444",
+        // "sideBar.background": "#ebebeb",
+        // "editor.background": "#ebebeb",
+        // "tab.activeBackground": "#dbdbdb",
+        // "terminal.background": "#dbdbdb",
+
+        // gray theme
+        // "statusBar.background": "#24262b",
+        // "sideBar.background": "#24262b",
+        // "editor.background": "#24262b",
+        // "tab.activeBackground": "#24262b",
+        // "terminal.background": "#24262b",
+    },
+    
+    // window
+    "window.zoomLevel": -1,
+
+    // background
+    "background.useDefault": false,
+    "background.customImages":[
+        // "https://user-images.githubusercontent.com/24371189/47023104-85336080-d191-11e8-957f-b4ac3f8a24c1.png",
+        // "https://user-images.githubusercontent.com/9987486/40583670-d6478c9e-61c5-11e8-9551-6b55eacc7b8d.png"
+        // "https://www.pikpng.com/pngl/b/531-5319427_anime-png.png",
+        "https://s3.getstickerpack.com/storage/uploads/sticker-pack/qiqi/sticker_5.png"
+    ],
+    "background.style": {
+        "content": "''",
+        "pointer-events": "none",
+        "position": "absolute",
+        "right": "0",
+        "bottom": "0",
+        "width": "30%", // 100%
+        "height": "30%", // 100%
+        "z-index": "9999",
+        "background-size": "contain",
+        "opacity": 0.3,
+    },
+
+    /* languages */
+    // javascript
+    "javascript.validate.enable": false,
+    "[javascript]": {
+        "editor.tabSize": 2
+    },
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "[typescript]": {
+        "editor.tabSize": 2
+    },
+
+    // phpfmt extension
+    "phpfmt.indent_with_space": 2,
+    "phpfmt.psr2": false,
+    "[php]": {
+        "editor.defaultFormatter": "kokororin.vscode-phpfmt",
+        "editor.formatOnSave": false,
+    },
+
+    // dart
+    "[dart]": {
+        "editor.rulers": [
+            80
+        ],
+        "editor.selectionHighlight": false,
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": false,
+    },
+    "dart.warnWhenEditingFilesOutsideWorkspace": false,
+    "dart.closingLabels": false,
+    "dart.previewFlutterUiGuides": true,
+    "dart.previewFlutterUiGuidesCustomTracking": true,
+
+    // tailwind
+    "headwind.runOnSave": false,
+    "headwind.classRegex": {
+        "scss": "\\B@apply\\s+([_a-zA-Z0-9\\s\\-\\:\\/]+);",
+    },
+    
+    // misc
+    "extensions.ignoreRecommendations": true,
+    "debug.openDebug": "openOnDebugBreak",
+
+    // custom dictionaries
+    "cSpell.userWords": [
+        "nuxt",
+        "nuxtjs"
+    ],
+
+    // files
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "files.associations": {
+        "*.md": "mdx"
+    },
+
+    // vibrancy extension
+    "vscode_vibrancy.opacity": -100,
+    "vscode_vibrancy.theme": "Dark (Only Subbar)",
+}
