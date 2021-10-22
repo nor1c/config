@@ -2,15 +2,15 @@
   excludefiles = ~/.gitignore
   editor = vim
 [user]
-	email = xxx@domain.com
-	name = nor1c
-	signingkey = XXXXXXXXXXXXXXXX
+  email = xxx@domain.com
+  name = nor1c
+  signingkey = XXXXXXXXXXXXXXXX
 [gpg]
-	program = gpg2
+  program = gpg2
 [credential "https://github.com"]
-	helper = !/usr/bin/gh auth git-credential
+  helper = !/usr/bin/gh auth git-credential
 [commit]
-	gpgsign = true
+  gpgsign = true
 [alias]
   df = diff
   co = checkout
