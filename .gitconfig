@@ -1,0 +1,18 @@
+[core]
+  excludefiles = ~/.gitignore
+  editor = vim
+[user]
+	email = xxx@xxx.xxx
+	name = nor1c
+	signingkey = XXXXXXXXXXXXXXXX
+[gpg]
+	program = gpg2
+[credential "https://github.com"]
+	helper = !/usr/bin/gh auth git-credential
+[commit]
+	gpgsign = true
+[alias]
+  df = diff
+  co = checkout
+  com = commit
+  stat = status
