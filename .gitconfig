@@ -2,7 +2,7 @@
   excludefiles = ~/.gitignore
   editor = vim
 [user]
-	email = xxx@xxx.xxx
+	email = xxx@domain.com
 	name = nor1c
 	signingkey = XXXXXXXXXXXXXXXX
 [gpg]
