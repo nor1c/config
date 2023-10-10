@@ -14,5 +14,6 @@
 [alias]
   df = diff
   co = checkout
-  com = commit
+  cm = commit -m
   stat = status
+  "log --oneline --graph" = logline
