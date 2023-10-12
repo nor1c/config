@@ -16,4 +16,5 @@
   co = checkout
   cm = commit -m
   stat = status
-  "log --oneline --graph" = logline
+  logline = "log --oneline --graph"
+  plo = "pull origin"
