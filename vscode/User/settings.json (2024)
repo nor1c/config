@@ -1,0 +1,769 @@
+{
+    // "files.eol": "\n", // use "git config --global core.autocrlf true" instead
+    "window.zoomLevel": -1,
+
+    "editor.fontSize": 15,
+    "editor.fontWeight": "400",
+    "editor.lineHeight": 32,
+    "editor.fontFamily": "Jetbrains Mono",
+    // "editor.fontFamily": "Google Sans Mono",
+    // "editor.fontFamily": "Agave Nerd Font",
+    // "editor.fontFamily": "Gotham Regular",
+    "editor.fontLigatures": false,
+    // "editor.fontFamily": "Liberation Mono",
+    // "editor.fontFamily": "Inconsolata",
+    // "editor.fontFamily": "Martian Mono SemiCondensed Light",
+    // "editor.fontFamily": "\"Rec Mono Duotone\", Menlo, monospace",
+    // "editor.fontLigatures": "'ss05','ss08','ss10','ss11','ss12','pnum','dlig'",
+    // "editor.fontFamily": "Recursive Monospace",
+    // "editor.fontFamily": "Maison Neue Mono Medium",
+    // "editor.fontFamily": "Fira Code",
+    // "editor.fontFamily": "DM Mono",
+    // "editor.fontFamily": "DM Sans",
+    // "editor.fontFamily": "Dank Mono",
+    // "editor.fontFamily": "Roboto Mono",
+    // "editor.fontFamily": "Cascadia Mono SemiLight",
+    // "editor.fontFamily": "Cascadia Code SemiLight",
+    // "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'zero', 'onum'",
+    "editor.hover.sticky": false,
+    "editor.minimap.enabled": false,
+    "workbench.editor.decorations.colors": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.formatOnPaste": false,
+    "editor.smoothScrolling": true,
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.suggestSelection": "first",
+    "editor.tokenColorCustomizations": {
+        "comments": "#7b7b7b",
+        // "strings": "#0099CC",
+        // "keywords": "#00FF00",
+        "textMateRules": [
+            {
+                "scope": [
+                    "source.dart entity.name.class",
+                    "source.dart support.class",
+                    "source.dart constant.other",
+                    "source.dart variable.other.readwrite",
+                    "source.dart variable.other"
+                ],
+                "settings": {
+                    "foreground": "#24b59d",
+                    "fontStyle": "bold italic"
+                }
+            },
+            {
+                "name": "Color-1",
+                "scope": [
+                    "constant.other.color",
+                    "keyword.other.substitution",
+                    "keyword.other.template",
+                    "punctuation.section.embedded",
+                    "punctuation.separator.inheritance.php",
+                    "punctuation",
+                    "source"
+                ],
+                "settings": {
+                    // "foreground": "#ECF6FF"
+                }
+            },
+            {
+                "name": "Color-1 bold",
+                "scope": [
+                    "support.type.object",
+                    "constant.other.symbol",
+                    "constant.other.key",
+                    "entity.other.inherited-class",
+                    "markup.heading",
+                    "markup.inserted.git_gutter",
+                    "support.type.property-name",
+                    "variable.graphql",
+                    "variable.parameter",
+                    "entity.name.type.class",
+                    "entity.name.type.interface",
+                    "entity.name.type.module",
+                    "support.class.builtin",
+                    "variable.object.property",
+                    "meta.object-literal",
+                    "support.class",
+                    "entity.name.function.tagged-template"
+                ],
+                "settings": {
+                    "fontStyle": "bold",
+                    // "foreground": "#ECF6FF"
+                }
+            },
+            {
+                "name": "Color-1 italic",
+                "scope": [
+                    "markup.italic",
+                    "meta.property-value",
+                    "source.css constant",
+                    "source.css support.constant",
+                    "source.stylus constant",
+                    "source.stylus support.constant",
+                    "string",
+                    "constant.numeric.css",
+                    "string.quoted.single",
+                    "string.template",
+                    "support.function.console",
+                    "meta.function-call.object"
+                ],
+                "settings": {
+                    "fontStyle": "italic",
+                    // "foreground": "#ECF6FF"
+                }
+            },
+            {
+                "name": "Color-1 underline",
+                "scope": [
+                    "entity.name.function",
+                ],
+                "settings": {
+                    "fontStyle": "bold italic",
+                    "foreground": "#dfe568"
+                }
+            },
+            {
+                "name": "Operators",
+                "scope": [
+                    "keyword.operator"
+                ],
+                "settings": {
+                    "fontStyle": "italic bold"
+                }
+            },
+            {
+                "name": "Color-1 italic bold",
+                "scope": [
+                    "support.variable.object",
+                    "constant.language",
+                    "support.constant",
+                    "constant.character",
+                    "constant.escape",
+                    "keyword.other.unit",
+                    "keyword.other",
+                    "entity.name.type.class.php",
+                    "keyword.function.go",
+                ],
+                "settings": {
+                    "fontStyle": "italic bold",
+                    // "foreground": "#ECF6FF"
+                }
+            },
+            {
+                "name": "Color-1 italic underline bold",
+                "scope": ["variable.function.constructor", "meta.function-call.static"],
+                "settings": {
+                    "fontStyle": "italic underline bold",
+                    // "foreground": "#ECF6FF"
+                }
+            },
+            {
+                "name": "Color-1 italic underline",
+                "scope": ["variable.function", "markup.underline.link"],
+                "settings": {
+                    "fontStyle": "italic underline",
+                    // "foreground": "#ECF6FF"
+                }
+            },
+        
+            {
+                "name": "Color-2",
+                "scope": [
+                    "constant.numeric.decimal",
+                    "constant.other.reference.link.markdown",
+                    "entity.other.attribute-name.class",
+                    "entity.other.inherited-class",
+                    "punctuation.section.embedded",
+                    "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
+                    "source.stylus string",
+                    "entity.name.type.instance",
+                    "meta.type.object.graphql",
+                    "punctuation.definition.tag",
+                    "entity.name.fragment.graphql",
+                    "meta.function.php",
+                    "variable.other.php",
+                ],
+                "settings": {
+                    "fontStyle": "",
+                    // "foreground": "#EBEA8B"
+                }
+            },
+            {
+                "name": "Color-2 italic",
+                "scope": ["variable.parameter.graphql","support.function.magic","storage.type.shape"],
+                "settings": {
+                    "fontStyle": "italic",
+                    // "foreground": "#EBEA8B"
+                }
+            },
+            {
+                "name": "Color-2 bold",
+                "scope": [
+                    "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
+                ],
+                "settings": {
+                    "fontStyle": "bold",
+                    // "foreground": "#EBEA8B"
+                }
+            },
+            {
+                "name": "Color-3",
+                "scope": [
+                    "meta.property.object",
+                    "string.other.link.title.markdown",
+                    "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
+                    "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
+                    "support.type",
+                    "string.regexp",
+                    "variable.other",
+                    "variable.other.bracket.shell",
+                    "variable.other.readwrite",
+                    "variable.other.property",
+                ],
+                "settings": {
+                    "fontStyle": "",
+                    // "foreground": "#AEE9F5"
+                }
+            },
+            {
+                "name": "Color-3 italic",
+                "scope": [
+                    "variable.other.object",
+                    "variable.other.readwrite.alias",
+                    "variable.fragment.graphql",
+                    "entity.name.type.typedecl"
+                ],
+                "settings": {
+                    "fontStyle": "italic",
+                    // "foreground": "#AEE9F5"
+                }
+            },
+            {
+                "name": "Color-3 bold",
+                "scope": [
+                    "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
+                    "support.class.component",
+                    "entity.name.tag"
+                ],
+                "settings": {
+                    "fontStyle": "bold",
+                    // "foreground": "#AEE9F5"
+                }
+            },
+            {
+                "name": "Color-3 italic bold",
+                "scope": [
+                    "entity.name.tag",
+                    "markup.deleted.git_gutter",
+                    "support.class.component"
+                ],
+                "settings": {
+                    "fontStyle": "italic bold",
+                    // "foreground": "#AEE9F5"
+                }
+            },
+            {
+                "name": "Color-3 italic underline",
+                "scope": [],
+                "settings": {
+                    "fontStyle": "italic underline",
+                    // "foreground": "#AEE9F5"
+                }
+            },
+            {
+                "name": "Color-4",
+                "scope": [
+                    "support.type",
+                    "variable.other.constant",
+                    "support.variable.property",
+                    "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
+                    "string.other.link",
+                    "meta.property-list.scss",
+                    "markup.inserted",
+                    "meta.type.object.graphql",
+                    "support.type.primitive",
+            
+            
+                ],
+                "settings": {
+                    "fontStyle": "",
+                    // "foreground": "#A8F79A"
+                }
+                },
+                {
+                "name": "Color-4 italic",
+                "scope": [
+                    "constant.character.escape",
+                    "entity.name.type",
+                    "entity.other.attribute-name",
+                    "support.class.console",
+                    "support.function",
+                    "support.type.graphql",
+                    "storage.type.php"
+                ],
+                "settings": {
+                    "fontStyle": "italic",
+                    // "foreground": "#A8F79A"
+                }
+            },
+            {
+                "name": "Color-4 italic underline",
+                "scope": [
+            
+                ],
+                "settings": {
+                    "fontStyle": "italic underline",
+                    // "foreground": "#A8F79A"
+                }
+            },
+            {
+                "name": "Color-4 underline",
+                "scope": ["markup.underline"],
+                "settings": {
+                    "fontStyle": "underline",
+                    // "foreground": "#A8F79A"
+                }
+            },
+            {
+                "name": "Color-4 bold",
+                "scope": [
+                    "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
+                    "markup.underline",
+                    "entity.name.tag.css"
+                ],
+                "settings": {
+                    "fontStyle": "bold",
+                    // "foreground": "#A8F79A"
+                }
+            },
+            {
+                "name": "Color-5",
+                "scope": [
+                    "keyword",
+                    "punctuation",
+                    "punctuation.operation.graphql",
+                    "storage.modifier.php",
+                    "storage.type",
+                ],
+                "settings": {
+                    "fontStyle": "",
+                    // "foreground": "#F699D9"
+                }
+            },
+            {
+                "scope": [
+                    "constant.language",
+                    "storage.modifier",
+                    "entity.name.tag.grapahql.js",
+                    "constant.other"
+                ],
+                "settings": {
+                    "fontStyle": "bold",
+                    // "foreground": "#F699D9"
+                }
+            },
+            {
+                "name": "Color-5 italic",
+                "scope": [
+                    "keyword.control",
+                    "punctuation.definition",
+                    "keyword.fragment.graphql"
+                ],
+                "settings": {
+                    "fontStyle": "italic bold",
+                    "foreground": "#b165a9"
+                }
+            },
+            {
+                "name": "Color-5 bold",
+                "scope": ["keyword.generator.asterisk"],
+                "settings": {
+                    "fontStyle": "italic bold",
+                    // "foreground": "#F699D9"
+                }
+            },
+            {
+                "name": "Color-6",
+                "scope": "comment",
+                "settings": {
+                    // "foreground": "#A3B5C3"
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "name": "Color-6 italic",
+                "scope": [
+                    "punctuation.definition.comment",
+                ],
+                "settings": {
+                    "fontStyle": "italic",
+                    // "foreground": "#A3B5C3"
+                }
+            }
+        ],
+        "function.declaration.readonly": {
+            "foreground": "#ECF6FF",
+            "fontStyle": "underline"
+        },
+        "property.declaration": {
+            "foreground": "#ECF6FF",
+            "fontStyle": "bold"
+        },
+        "function.readonly": {
+            "foreground": "#ECF6FF",
+            "fontStyle": "italic underline"
+        },
+        "parameter.declaration": {
+            "foreground": "#ECF6FF",
+            "fontStyle": ""
+        },
+        "function.readonly.local": {
+            "foreground": "#ECF6FF",
+            "fontStyle": "italic underline"
+        },
+        "variable.declaration.readonly": {
+            "foreground": "#EBEA8B",
+            "fontStyle": "italic"
+        },
+        "variable.readonly": {
+            "foreground": "#EBEA8B",
+            "fontStyle": ""
+        },
+        "*.readonly": {
+            "foreground": "#EBEA8B",
+            "fontStyle": ""
+        },
+        "property": {
+            "foreground": "#AEE9F5",
+            "fontStyle": ""
+        },
+        "parameter": {
+            "foreground": "#AEE9F5",
+            "fontStyle": ""
+        },
+        "type": {
+            "foreground": "#A8F79A",
+            "fontStyle": "italic"
+        },
+        "type.declaration": {
+            "foreground": "#A8F79A",
+            "fontStyle": "italic"
+        },
+        "interface.defaultLibrary": {
+            "foreground": "#A8F79A",
+            "fontStyle": "italic"
+        },
+        "variable.defaultLibrary": {
+            "foreground": "#A8F79A",
+            "fontStyle": "bold"
+        },
+        "member.defaultLibrary": {
+            "foreground": "#AEE9F5",
+            "fontStyle": "italic"
+        },
+        "*.defaultLibrary": {
+            "foreground": "#AEE9F5",
+            "fontStyle": "italic"
+        }
+      },
+    // "editor.cursorWidth": 10,
+    "editor.cursorStyle": "block",
+    "editor.autoClosingBrackets": "always",
+    "editor.autoClosingQuotes": "always",
+    "editor.autoClosingDelete": "always",
+    "editor.tabSize": 2,
+    "editor.codeLens": false,
+
+    // explorer
+    "explorer.compactFolders": false,
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+
+    // terminal
+    "terminal.integrated.fontFamily": "Jetbrains Mono",
+    // "terminal.integrated.fontFamily": "Liberation Mono for Powerline",
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.gpuAcceleration": "off",
+    "terminal.integrated.tabs.location": "left",
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+
+    "workbench.colorTheme": "Seth",
+    // "workbench.colorTheme": "Blueberry dark theme",
+    // "workbench.colorTheme": "Summer Time",
+    // "workbench.colorTheme": "Mariana (Sublime)",
+    // "workbench.colorTheme": "Dracula Soft Syntax Theme",
+
+    "workbench.iconTheme": "theme",
+    // "workbench.tree.renderIndentGuides": "always",
+    "workbench.colorCustomizations": {
+        // dark theme
+        // #1f1f1f
+        // "editor.background": "#161922",
+        // "terminal.background": "#161922",
+        // "statusBar.background": "#161922",
+        // "sideBar.background": "#161922",
+        // "tab.activeBackground": "#161922",
+
+        "activityBar.background": "#161922",
+        "activityBar.activeBackground": "#3755b0", // left menus
+        "activityBar.border": "#2f4995",
+        "activityBarBadge.background": "#2f4995",
+        "activityBar.dropBorder": "#161922",
+        "tab.hoverBackground": "#222222",
+        "titleBar.activeBackground": "#242529", // title bar
+        "editorIndentGuide.background": "#212226",
+        "editorIndentGuide.activeBackground": "#3c3f4a",
+        "tree.indentGuidesStroke": "#222222",
+        "tab.border": "#262626",
+        "list.inactiveSelectionBackground": "#313131",
+        "editor.lineHighlightBackground": "#2f2f2f",
+        "tab.inactiveBackground": "#1d1d1d",
+
+        // light theme
+        // "statusBar.background": "#444444",
+        // "sideBar.background": "#ebebeb",
+        // "editor.background": "#ebebeb",
+        // "tab.activeBackground": "#dbdbdb",
+        // "terminal.background": "#dbdbdb",
+
+        // gray theme
+        "statusBar.background": "#242529",
+        "sideBar.background": "#242529",
+        "editor.background": "#242529",
+        "tab.activeBackground": "#242529",
+        "terminal.background": "#242529",
+    },
+
+    // background
+    "background.useDefault": false,
+    // "background.customImages": [
+        // "https://user-images.githubusercontent.com/24371189/47023104-85336080-d191-11e8-957f-b4ac3f8a24c1.png",
+        // "https://user-images.githubusercontent.com/9987486/40583670-d6478c9e-61c5-11e8-9551-6b55eacc7b8d.png"
+        // "https://www.pikpng.com/pngl/b/531-5319427_anime-png.png",
+        // "https://s3.getstickerpack.com/storage/uploads/sticker-pack/qiqi/sticker_5.png"
+    // ],
+    "background.enabled": false,
+    "background.fullscreen": {
+        "images": [
+            "https://images.alphacoders.com/115/1151481.jpg",
+            // "https://r4.wallpaperflare.com/wallpaper/15/656/978/anime-anime-girls-apex-legends-short-hair-valkyrie-apex-legends-hd-wallpaper-219fcb045aa53d6377dacc7abe9c0698.jpg",
+            // "https://r4.wallpaperflare.com/wallpaper/414/910/505/anime-overlord-wallpaper-72ecb9065be4e290498eff0fbda8d8b1.jpg",
+            // "https://r4.wallpaperflare.com/wallpaper/879/831/614/anime-overlord-ainz-ooal-gown-albedo-overlord-wallpaper-325c8936cb442220c98ebfff5da88841.jpg",
+        ],
+        "opacity": 0.95, // 0.85 ~ 0.95 recommended
+        "size": "cover", // also css, `cover` to self-adaption (recommended)，or `contain`、`200px 200px`
+        "position": "center", // alias to `background-position`, default `center`
+        "interval": 5
+    },
+    // "background.style": {
+    //     "content": "''",
+    //     "pointer-events": "none",
+    //     "position": "absolute",
+    //     "right": "0",
+    //     "bottom": "0",
+    //     "width": "30%", // 100%
+    //     "height": "30%", // 100%
+    //     "z-index": "9999",
+    //     "background-size": "contain",
+    //     "opacity": 0.8,
+    // },
+
+    /* languages */
+    // json
+    "[json]": {
+        "editor.quickSuggestions": {
+            "strings": true
+        },
+        "editor.suggest.insertMode": "replace",
+        "editor.tabSize": 2
+    },
+    
+    // javascript
+    "javascript.validate.enable": false,
+    "[javascript]": {
+        "editor.tabSize": 2
+    },
+
+    // typescript
+    "[typescript]": {
+        "editor.tabSize": 2,
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter":  "esbenp.prettier-vscode",
+    },
+    // "prettier.prettierPath": "./node_modules/prettier",
+    "typescript.referencesCodeLens.enabled": true,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "importSorter.generalConfiguration.sortOnBeforeSave": true,
+    "importSorter.importStringConfiguration.hasSemicolon": false,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit"
+    },
+
+    "[vue]": {
+        "editor.formatOnSave": false,
+        "editor.defaultFormatter": "Vue.volar"
+    },
+
+    // phpfmt extension
+    "phpfmt.indent_with_space": 4,
+    "phpfmt.psr2": false,
+    "[php]": {
+        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
+        "editor.formatOnSave": false,
+        "editor.insertSpaces": true,
+        "editor.indentSize": 4,
+        "editor.tabSize": 4,
+        "editor.parameterHints.enabled": false,
+    },
+    "phpParameterHint.enabled": false,
+
+    // laravel blade
+    "blade.format.enable": true,
+    "[blade]": {
+        "editor.defaultFormatter": "amirmarmul.laravel-blade-vscode",
+        "editor.formatOnSave": false,
+        "editor.insertSpaces": true,
+        "editor.indentSize": 4,
+        "editor.tabSize": 4,
+    },
+
+    "[go]": {
+        "editor.insertSpaces": false,
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        },
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+    },
+    "groupImports.onSave": true,
+    "groupImportsForGo.Mode": 2,
+
+    // dart
+    "[dart]": {
+        "editor.selectionHighlight": false,
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": "off",
+        "editor.defaultFormatter": "Dart-Code.dart-code",
+        "editor.formatOnSave": true,
+    },
+    "dart.warnWhenEditingFilesOutsideWorkspace": true,
+    "dart.closingLabels": true,
+    "dart.previewFlutterUiGuides": true,
+    "dart.previewFlutterUiGuidesCustomTracking": true,
+
+    // prisma
+    "[prisma]": {
+        "editor.formatOnSave": true
+    },
+
+    // tailwind
+    "headwind.runOnSave": true,
+    // "headwind.classRegex": {
+    //     "scss": "\\B@apply\\s+([_a-zA-Z0-9\\s\\-\\:\\/]+);",
+    // },
+
+    // misc
+    "extensions.ignoreRecommendations": true,
+    "debug.openDebug": "openOnDebugBreak",
+
+    // custom dictionaries
+    "cSpell.userWords": [
+        "nuxt",
+        "nuxtjs"
+    ],
+
+    // files
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "files.associations": {
+        "*.md": "mdx"
+    },
+    "eslint.rules.customizations": [
+        {
+            "rule": "indent",
+            "severity": "error"
+        },
+        {
+            "rule": "no-trailing-spaces",
+            "severity": "off"
+        }
+    ],
+
+    // vibrancy extension
+    // "vscode_vibrancy.opacity": -100,
+    // "vscode_vibrancy.theme": "Dark (Only Subbar)",
+
+    "editor.inlineSuggest.enabled": true,
+    "extensions.autoUpdate": "onlySelectedExtensions",
+
+    "tabnine.experimentalAutoImports": true,
+    "chatgpt.gpt3.apiKey": "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",
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        },
+        "Ubuntu-20.04 (WSL)": {
+            "path": "C:\\Windows\\System32\\wsl.exe",
+            "args": [
+                "-d",
+                "Ubuntu-20.04"
+            ]
+        }
+    },
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "git.openRepositoryInParentFolders": "never",
+    "RainbowBrackets.depreciation-notice": false,
+    "mdb.confirmRunAll": false,
+    "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
+    "php-cs-fixer.lastDownload": 1710140662043,
+    "sonarlint.rules": {
+        "php:S103": {
+            "level": "off"
+        },
+        "php:S125": {
+            "level": "off"
+        }
+    },
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": false,
+    "editor.guides.highlightActiveIndentation": true,
+    "editor.guides.highlightActiveBracketPair": true,
+    "indentRainbow.colors": [
+        "rgba(3, 4, 94,0.15)",
+        "rgba(2, 62, 138,0.15)",
+        "rgba(0, 119, 182, 0.15)",
+        "rgba(0, 150, 199,0.15)",
+        "rgba(0, 180, 216,0.15)",
+        "rgba(72, 202, 228,0.15)",
+        "rgba(144, 224, 239,0.15)",
+        "rgba(144, 224, 239,0.1)",
+        "rgba(144, 224, 239,0.05)",
+        "rgba(144, 224, 239,0.025)"
+    ],
+    "window.commandCenter": false,
+    "workbench.startupEditor": "none",
+    "dart.lineLength": 10000000000,
+    "editor.stickyScroll.enabled": false,
+    "editor.stickyScroll.scrollWithEditor": false,
+    "workbench.tree.enableStickyScroll": false,
+}
